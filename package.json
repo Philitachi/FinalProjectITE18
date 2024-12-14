@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "es-module-shims": "^1.10.1",
+    "three": "^0.171.0"
+  },
+  "name": "final-project",
+  "version": "1.0.0",
+  "main": "script.js",
+  "devDependencies": {
+    "vite": "^6.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

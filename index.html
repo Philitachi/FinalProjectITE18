@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three.js Game</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        background: #527386;
+      }
+
+      #game-panel {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        z-index: 10;
+      }
+
+      #game-panel button,
+      #game-panel input {
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      #reset-game,
+      #home-button {
+        position: absolute;
+        top: 10px;
+        padding: 10px;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: none; /* Initially hidden */
+      }
+
+      #reset-game {
+        left: 10px;
+        background: #0369a1;
+      }
+
+      #home-button {
+        left: 120px; /* Place home button next to reset button */
+        background: #2d7f39; /* Different color for home button */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Game Panel -->
+    <div id="game-panel">
+      <h1>I'LL TOUCH MY ?</h1>
+      <button id="start-game">Start Game</button>
+      <br />
+      <label for="volume">Volume:</label>
+      <input id="volume" type="range" min="0" max="100" value="50" />
+    </div>
+
+    <!-- Reset and Home Buttons -->
+    <button id="reset-game">Reset Game</button>
+    <button id="home-button">Home</button>
+    <!-- Home button added -->
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
